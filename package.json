@@ -1,0 +1,27 @@
+{
+  "name": "WikipediaSearch",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "0.10.32"
+  },
+  "main": "app.js",
+  "dependencies": {
+    "bluebird": "^3.0.5",
+    "clone": "^1.0.2",
+    "request-promise": "^1.0.2"
+  },
+  "devDependencies": {
+    "aws-sdk": "2.1.2",
+    "eslint": "*",
+    "gulp": "^3.9.0",
+    "gulp-cli": "^0.3.0",
+    "gulp-jasmine": "^2.2.1"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "initLambda": "node ./script/initLambda.js",
+    "build": "node ./script/build.js",
+    "publish": "node ./script/publish.js"
+  }
+}
